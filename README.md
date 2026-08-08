@@ -60,7 +60,7 @@ The project uses a PDF containing **more than 4,000 pages divided into 23 sectio
 
 ```text
                  ┌─────────────────────┐
-                 │   Merck Manuals PDF  │
+                 │   Merck Manuals PDF │
                  └──────────┬──────────┘
                             │
                             ▼
@@ -71,7 +71,7 @@ The project uses a PDF containing **more than 4,000 pages divided into 23 sectio
                             ▼
                  ┌─────────────────────┐
                  │ Text Splitting /    │
-                 │ Chunking             │
+                 │ Chunking            │
                  └──────────┬──────────┘
                             │
                             ▼
@@ -301,8 +301,7 @@ AI-Medical-Diagnosis-Assistant/
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/AI-Medical-Diagnosis-Assistant.git
-cd AI-Medical-Diagnosis-Assistant
+git clone https://github.com/RathnavelSubramaniam/module-ii-project-i-NaveenSurendar-S.git
 ```
 
 Install the required packages:
@@ -320,25 +319,6 @@ pip install huggingface_hub
 pip install llama-cpp-python
 pip install pandas
 ```
-
----
-
-## How to Run
-
-### Option 1 — Google Colab
-
-1. Open the `.ipynb` notebook in Google Colab.
-2. Run the dependency installation cells.
-3. Restart the runtime when required.
-4. Run the notebook cells sequentially.
-5. Download/load the LLaMA-2 model.
-6. Load the medical document.
-7. Build the vector database.
-8. Enter a medical question.
-9. Retrieve relevant context.
-10. Generate the final answer.
-
-The notebook itself recommends restarting the Colab runtime/kernel after dependency installation before continuing execution.
 
 ---
 
@@ -391,8 +371,6 @@ Context-Aware Response
 * The notebook's prompt-only approach does not inherently provide authoritative source references.
 * Dependency versions may need adjustment depending on the execution environment.
 
-The notebook also records package/dependency conflicts during installation, so reproducibility may require matching or updating the package versions used by the notebook.
-
 ---
 
 ## Future Enhancements
@@ -400,10 +378,6 @@ The notebook also records package/dependency conflicts during installation, so r
 * Add a web-based user interface using Streamlit or Flask.
 * Add citation and page-level references from the medical documents.
 * Improve retrieval using hybrid search.
-* Add reranking of retrieved documents.
-* Add conversation memory.
-* Add multilingual medical question answering.
-* Add evaluation metrics for RAG responses.
 * Improve hallucination detection.
 * Add automatic source verification.
 * Deploy the system as a healthcare information assistant.
@@ -413,8 +387,6 @@ The notebook also records package/dependency conflicts during installation, so r
 ## Conclusion
 
 The **AI Medical Diagnosis Assistant** demonstrates how **Retrieval-Augmented Generation** can combine a Large Language Model with an external medical knowledge base.
-
-The project first demonstrates medical question answering using prompt engineering and then moves toward a RAG-based architecture to address the limitations of relying only on pre-trained LLM knowledge. The overall goal is to create a more relevant, grounded, and source-aware medical AI prototype.
 
 ---
 
